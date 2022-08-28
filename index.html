@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/swiper-bundle.min.css">
+  <link rel="stylesheet" href="src/style.css">
+
+  <title>Aró Digital Strategy</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <!--NAVBAR-->
+  <div class="navbar-container">
+    <div class="logo-container">
+      <img src="media/header/logo.svg" alt="Company logo">
+    </div>
+    <div class="menu-container">
+      <div class="menu-item menu-link">
+        <a href="#">Offers</a>
+      </div>
+      <div class="menu-item menu-link">
+        <a href="#">Rooms</a>
+      </div>
+      <div class="menu-item menu-link">
+        <a href="#">Gallery</a>
+      </div>
+
+      <div class="menu-item gift-card-button">
+        <a href="#"><img src="media/header/gift-voucher.svg" alt="Gift voucher"></a>
+      </div>
+
+      <div class="menu-item book-button">
+        <a href="#">Book Now</a>
+      </div>
+
+      <div class="menu-item menu-button">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--END OF NAVBAR-->
+
+
+  <!--HIDDEN MENU-->
+  <div class="page-overlay hidden-overlay">
+  </div>
+  <div class="hidden-menu is-hidden">
+    <div class="hidden-menu-content">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <hr />
+        <li>
+          <a href="#">Offers</a>
+        </li>
+        <hr />
+        <li>
+          <a href="#">Rooms</a>
+        </li>
+        <hr />
+        <li>
+          <a href="#">Gallery</a>
+        </li>
+        <hr />
+        <li>
+          <a href="#">Location</a>
+        </li>
+        <hr />
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+        <li>
+          <button class="book-now"><a href="#">Book now</a></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--END OF HIDDEN MENU-->
+  <!--HERO-->
+
+  <!-- Slideshow container -->
+
+  <div class="hero-container">
+
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="media/header/hero-1.png" style="width:100%">
+        <div class="text">
+          <h1>WELCOME TO ARO HOTEL</h1>
+          <h2>Relax & Unwind</h2>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="media/header/hero-2.png" style="width:100%">
+        <div class="text">
+          <h1>WELCOME TO ARO HOTEL</h1>
+          <h2>Explore & Discover</h2>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="media/header/hero-3.png" style="width:100%">
+        <div class="text">
+          <h1>WELCOME TO ARO HOTEL</h1>
+          <h2>Chill & Lounge</h2>
+        </div>
+      </div>
+
+
+      <!-- The dots/circles -->
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+    </div>
+
+    <!--END OF HERO-->
+
+  </div>
+  <!-- END OF HEADER -->
+
+
+
+  <!-- START OF MAIN -->
+
+  <!--OUR ROOMS SECTION-->
+  <div class="our-rooms-section">
+
+    <div class="our-rooms-section-header">
+      <h2>Our Rooms</h2>
+      <p>Love our central location</p>
+    </div>
+
+    <div class="slide-container swiper">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card card1 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 1</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card2 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 2</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card3 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 3</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card4 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 4</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <!--second round-->
+
+        <div class="card card5 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 5</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card6 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 6</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card7 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 7</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card8 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 8</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <!--third round-->
+
+        <div class="card card9 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 9</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card10 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 10</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card11 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 11</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card12 swiper-slide">
+          <div class="card-content">
+            <div class="card-title">
+              <h3>Room 12</h3>
+            </div>
+            <div class="card-description">
+              <h4>Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+            </div>
+            <div class="card-book">
+              <p>From <strong>€123</strong></p>
+              <button class="book-button"><a href="#">Book now</a></button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+    <div class="slider-commands">
+      <div class="slider-buttons">
+        <div class="my-swiper-button-next">></div>
+        <div class="my-swiper-button-prev">
+          < </div>
+        </div>
+        <div class="slider-link">
+          <a href="#">View all</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--END OF OUR ROOMS SECTION-->
+
+  <!-- OFFER SECTION -->
+  <div class="offer-section">
+    <div class="offer-section-grid">
+      <div class="offer-section-item">
+        <h3>Offer 1</h3>
+        <div class="offer-card">
+          <div class="card-img card-img-1">
+          </div>
+          <div class="card-text">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore
+              et dolore
+              magna aliquyam erat, sed diam voluptua. At vero
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>From <strong>€123</strong></p>
+            <button class="read-more-button"><a href="#">Read more</a></button>
+            <button class="book-button"><a href="#">Book now</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-section-item">
+        <h3>Offer 2</h3>
+        <div class="offer-card">
+          <div class="card-img card-img-2">
+          </div>
+          <div class="card-text">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore
+              et dolore
+              magna aliquyam erat, sed diam voluptua. At vero
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>From <strong>€123</strong></p>
+            <button class="read-more-button"><a href="#">Read more</a></button>
+            <button class="book-button"><a href="#">Book now</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-section-item">
+        <h3>Offer 3</h3>
+        <div class="offer-card">
+          <div class="card-img card-img-3">
+          </div>
+          <div class="card-text">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore
+              et dolore
+              magna aliquyam erat, sed diam voluptua. At vero
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>From <strong>€123</strong></p>
+            <button class="read-more-button"><a href="#">Read more</a></button>
+            <button class="book-button"><a href="#">Book now</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-section-item">
+        <h3>Offer 4</h3>
+        <div class="offer-card">
+          <div class="card-img card-img-4">
+          </div>
+          <div class="card-text">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore
+              et dolore
+              magna aliquyam erat, sed diam voluptua. At vero
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>From <strong>€123</strong></p>
+            <button class="read-more-button"><a href="#">Read more</a></button>
+            <button class="book-button"><a href="#">Book now</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-section-item">
+        <h3>Offer 5</h3>
+        <div class="offer-card">
+          <div class="card-img card-img-5">
+          </div>
+          <div class="card-text">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore
+              et dolore
+              magna aliquyam erat, sed diam voluptua. At vero
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>From <strong>€123</strong></p>
+            <button class="read-more-button"><a href="#">Read more</a></button>
+            <button class="book-button"><a href="#">Book now</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer-section-item">
+        <h3>Offer 6</h3>
+        <div class="offer-card">
+          <div class="card-img card-img-6">
+          </div>
+          <div class="card-text">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore
+              et dolore
+              magna aliquyam erat, sed diam voluptua. At vero
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>From <strong>€123</strong></p>
+            <button class="read-more-button"><a href="#">Read more</a></button>
+            <button class="book-button"><a href="#">Book now</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- END OF OFFER SECTION -->
+
+  <!--ARTICLE SECTION -->
+
+  <div class="article-section">
+    <div class="article-content">
+      <div class="article-img">
+        <img src="media/article-img.png" alt="Pool with palms">
+      </div>
+      <div class="article-text">
+        <div class="article-text-title">
+          <h2>Title</h2>
+          <h3>Lorem ipsum dolor sit amet</h3>
+        </div>
+        <div class="article-text-body">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            labore
+            et dolore
+            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita
+            kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur
+            sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua.
+            At
+            vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          </p>
+        </div>
+        <div class="article-text-body">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            labore
+            et dolore
+            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita
+            kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur
+            sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua.
+            At
+            vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--END OF ARTICLE SECTION-->
+
+
+  <!--FOOTER-->
+  <footer>
+    <div class="menu">
+      <div class="menu-item">
+        <a href="#">Home</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">Offers</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">Rooms</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">Gallery</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">Location</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="address">
+        <p>ARÓ HOTEL STREET ADDRESS TOWN / CITY ABC 123 IRELAND</p>
+      </div>
+      <div class="email">
+        <p>
+          EMAIL: EMAIL@HOTEL.COM
+        </p>
+      </div>
+      <div class="phone">
+        <p>
+          PHONE: (01) 2345 6789
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- END OF FOOTER -->
+
+  <!-- END OF MAIN -->
+
+  <script src="src/swiper-bundle.js" tabindex="0" role="button" aria-label="Next-slide"
+    aria-controls="swiper-wrapper-9cb832ef645e9da4"></script>
+
+  <script src="src/index.js"></script>
+</body>
+
+</html>
